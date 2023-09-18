@@ -5,11 +5,18 @@ const origin = checkNodeEnvironment(
   "http://localhost:3000"
 );
 
+// const corsConfig = {
+//   origin,
+//   credentials: true,
+//   optionSuccessStatus: 200,
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE, OPTIONS",
+// };
+
 const corsConfig = {
-  origin,
+  origin: "https://torre-test-client.vercel.app",
+  methods: ["GET", "PUT", "POST", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
-  optionSuccessStatus: 200,
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE, OPTIONS",
 };
 
 export default corsConfig;
