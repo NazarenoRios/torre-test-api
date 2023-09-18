@@ -1,4 +1,4 @@
-//Server Config.
+//Server Config
 import "dotenv/config.js";
 import "./models";
 import express from "express";
