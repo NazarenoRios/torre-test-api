@@ -13,6 +13,7 @@ const app = express();
 
 //Middleware
 app.use(express.json());
+app.use("/", setHeaders);
 app.use(cors(corsConfig));
 
 // Express Routing
